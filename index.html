@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101116">
+  <meta name="description" content="Terms of Service and Privacy Policy for UTrick’s Awesome Bot, a private Discord bot for entertainment among friends.">
+  <title>UTrick’s Awesome Bot — Legal</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101116;
+      --panel: #171923;
+      --panel-2: #1d2030;
+      --text: #f2f3f8;
+      --muted: #a7aabd;
+      --line: #2b2e40;
+      --accent: #9b8cff;
+      --accent-2: #6e9cff;
+      --radius: 18px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 15% 0%, rgba(111, 91, 210, .16), transparent 38rem),
+        radial-gradient(ellipse at 100% 20%, rgba(69, 117, 190, .10), transparent 34rem),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: #b7aaff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1080px, calc(100% - 36px)); margin: auto; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      backdrop-filter: blur(16px);
+      background: rgba(16, 17, 22, .82);
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+    .nav {
+      min-height: 72px; display: flex; align-items: center;
+      justify-content: space-between; gap: 18px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 750; letter-spacing: -.02em; }
+    .logo {
+      display: grid; place-items: center; width: 40px; height: 40px;
+      border-radius: 13px; background: linear-gradient(135deg, #7767db, #477ec5);
+      box-shadow: 0 8px 28px rgba(104, 94, 211, .25); font-size: 20px;
+    }
+    .nav-links { display: flex; gap: 8px; flex-wrap: wrap; }
+    .nav-links a, .tab {
+      color: var(--muted); padding: 9px 13px; border-radius: 11px;
+      font-size: .92rem; font-weight: 650; border: 1px solid transparent;
+    }
+    .nav-links a:hover, .tab:hover { background: var(--panel); color: var(--text); text-decoration: none; }
+    main { padding: 58px 0 76px; }
+    .hero { padding: 48px 0 34px; max-width: 760px; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px; color: #c7bdff;
+      background: rgba(155,140,255,.10); border: 1px solid rgba(155,140,255,.22);
+      padding: 6px 11px; border-radius: 999px; font-size: .78rem;
+      font-weight: 800; letter-spacing: .09em; text-transform: uppercase;
+    }
+    h1 { font-size: clamp(2.4rem, 6vw, 4.5rem); line-height: 1.05; letter-spacing: -.055em; margin: 20px 0 16px; }
+    .gradient { background: linear-gradient(100deg, #c6baff, #8fb8ff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .lead { color: var(--muted); font-size: 1.12rem; max-width: 660px; margin: 0; }
+    .meta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px; }
+    .pill { color: #c4c7d6; background: rgba(255,255,255,.045); border: 1px solid var(--line); border-radius: 999px; padding: 6px 11px; font-size: .82rem; }
+    .tabs { display: flex; gap: 8px; border-bottom: 1px solid var(--line); margin: 30px 0 24px; }
+    .tab { cursor: pointer; background: transparent; font: inherit; border-radius: 10px 10px 0 0; }
+    .tab[aria-selected="true"] { color: var(--text); border-color: var(--line); border-bottom-color: var(--bg); background: var(--panel); }
+    .document { display: none; }
+    .document.active { display: block; }
+    .intro-card {
+      background: linear-gradient(135deg, rgba(155,140,255,.12), rgba(110,156,255,.06));
+      border: 1px solid rgba(155,140,255,.20); border-radius: var(--radius);
+      padding: 20px 22px; color: #d9daea; margin-bottom: 22px;
+    }
+    .intro-card strong { color: white; }
+    .section-grid { display: grid; grid-template-columns: 220px minmax(0,1fr); gap: 24px; align-items: start; }
+    aside {
+      position: sticky; top: 94px; background: rgba(23,25,35,.72);
+      border: 1px solid var(--line); border-radius: var(--radius); padding: 16px;
+    }
+    aside .side-title { font-size: .75rem; color: #858aa2; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: 5px 9px 10px; }
+    aside a { display: block; color: var(--muted); padding: 7px 9px; border-radius: 9px; font-size: .88rem; }
+    aside a:hover { background: var(--panel-2); color: var(--text); text-decoration: none; }
+    .content { min-width: 0; }
+    .card {
+      background: rgba(23,25,35,.86); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 25px 27px; margin-bottom: 15px;
+    }
+    h2 { margin: 0 0 12px; font-size: 1.24rem; letter-spacing: -.025em; }
+    h2 .num { color: var(--accent); font-size: .83rem; margin-right: 9px; }
+    p { margin: 9px 0; color: #c2c5d3; }
+    ul { color: #c2c5d3; padding-left: 22px; margin: 10px 0; }
+    li { padding: 3px 0; }
+    .note { color: #9297ac; font-size: .9rem; }
+    .contact {
+      border: 1px dashed #454961; border-radius: 14px; padding: 16px 18px;
+      background: rgba(255,255,255,.025);
+    }
+    footer { border-top: 1px solid var(--line); padding: 25px 0 35px; color: #85899c; font-size: .86rem; }
+    footer .foot { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .small { font-size: .85rem; color: #85899c; }
+    @media (max-width: 760px) {
+      .nav { align-items: flex-start; padding: 14px 0; flex-direction: column; }
+      .section-grid { grid-template-columns: 1fr; }
+      aside { position: static; }
+      aside nav { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); }
+      main { padding-top: 28px; }
+      .hero { padding-top: 30px; }
+      .card { padding: 20px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand"><div class="logo" aria-hidden="true">✦</div><span>UTrick’s Awesome Bot</span></div>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#documents" data-switch="tos">Terms of Service</a>
+        <a href="#documents" data-switch="privacy">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">✦ Private Discord Bot</span>
+      <h1>Simple rules.<br><span class="gradient">Good times.</span></h1>
+      <p class="lead">Legal information for UTrick’s Awesome Bot, a personal Discord bot made for jokes, entertainment, and casual use among friends.</p>
+      <div class="meta">
+        <span class="pill">Private use only</span>
+        <span class="pill">Selected servers</span>
+        <span class="pill">Last updated: November 22, 2026</span>
+      </div>
+    </section>
+
+    <section id="documents">
+      <div class="tabs" role="tablist" aria-label="Legal documents">
+        <button class="tab" id="tab-tos" role="tab" aria-selected="true" aria-controls="tos">Terms of Service</button>
+        <button class="tab" id="tab-privacy" role="tab" aria-selected="false" aria-controls="privacy">Privacy Policy</button>
+      </div>
+
+      <article class="document active" id="tos" role="tabpanel" aria-labelledby="tab-tos">
+        <div class="intro-card"><strong>Welcome!</strong> UTrick’s Awesome Bot is a private, unofficial bot created for entertainment among friends. These terms explain the basic expectations for using it.</div>
+        <div class="section-grid">
+          <aside><div class="side-title">On this page</div><nav>
+            <a href="#tos-1">1. Acceptance</a><a href="#tos-2">2. Purpose & access</a>
+            <a href="#tos-3">3. Acceptable use</a><a href="#tos-4">4. Availability</a>
+            <a href="#tos-5">5. Termination</a><a href="#tos-6">6. Liability</a>
+            <a href="#tos-7">7. Changes</a><a href="#tos-8">8. Contact</a>
+          </nav></aside>
+          <div class="content">
+            <section class="card" id="tos-1"><h2><span class="num">01</span>Acceptance of Terms</h2><p>By accessing or using the Bot, you agree to follow these Terms of Service. If you do not agree, please do not use the Bot.</p></section>
+            <section class="card" id="tos-2"><h2><span class="num">02</span>Purpose and Access</h2><p>The Bot is a personal project intended for jokes, entertainment, and casual interaction among the developer and friends. It is not a public service.</p><p>Access is limited to people and Discord servers selected by the developer. The developer may approve or decline access requests at their discretion.</p></section>
+            <section class="card" id="tos-3"><h2><span class="num">03</span>Acceptable Use</h2><p>Please use the Bot responsibly. You must not:</p><ul>
+              <li>Abuse, exploit, or intentionally disrupt the Bot or its features.</li>
+              <li>Attempt to bypass permissions, restrictions, or security measures.</li>
+              <li>Use the Bot to harass, threaten, or target other people.</li>
+              <li>Exploit bugs or vulnerabilities for malicious purposes.</li>
+              <li>Use the Bot in a way that violates Discord’s Terms of Service or Community Guidelines.</li>
+            </ul><p>Jokes and playful interactions should remain respectful of other users’ boundaries.</p></section>
+            <section class="card" id="tos-4"><h2><span class="num">04</span>Availability and Changes</h2><p>The Bot is provided on an “as is” and “as available” basis. It may go offline, change, or stop working at any time. No uptime, support, or feature availability is guaranteed.</p></section>
+            <section class="card" id="tos-5"><h2><span class="num">05</span>Access Restrictions and Termination</h2><p>The developer may limit or revoke access to the Bot or remove it from a server at any time, including when these terms are violated or the Bot is no longer intended to be available there.</p></section>
+            <section class="card" id="tos-6"><h2><span class="num">06</span>Limitation of Liability</h2><p>To the extent permitted by applicable law, the developer is not responsible for losses or disruptions arising from use of, or inability to use, this personal Bot. Nothing in these terms excludes liability that cannot legally be excluded.</p></section>
+            <section class="card" id="tos-7"><h2><span class="num">07</span>Changes to These Terms</h2><p>These terms may be updated when the Bot or its use changes. The latest version will be published on this page. If you continue using the Bot after an update, that use is subject to the updated terms.</p></section>
+            <section class="card" id="tos-8"><h2><span class="num">08</span>Contact</h2><div class="contact"><p>For questions about these terms, contact the developer through Discord.</p><p class="note">Developer contact: @utrick_fr on Discord.</p></div></section>
+          </div>
+        </div>
+      </article>
+
+      <article class="document" id="privacy" role="tabpanel" aria-labelledby="tab-privacy">
+        <div class="intro-card"><strong>Your privacy matters.</strong> This policy describes the kinds of basic Discord information the Bot may process to respond to commands and operate its features. Make sure it matches what your code actually does before publishing.</div>
+        <div class="section-grid">
+          <aside><div class="side-title">On this page</div><nav>
+            <a href="#privacy-1">1. Information</a><a href="#privacy-2">2. How it is used</a>
+            <a href="#privacy-3">3. Storage & retention</a><a href="#privacy-4">4. Sharing</a>
+            <a href="#privacy-5">5. Security</a><a href="#privacy-6">6. Your choices</a>
+            <a href="#privacy-7">7. Changes</a><a href="#privacy-8">8. Contact</a>
+          </nav></aside>
+          <div class="content">
+            <section class="card" id="privacy-1"><h2><span class="num">01</span>Information the Bot May Process</h2><p>Depending on the commands and features you use, the Bot may process basic information made available through Discord, such as:</p><ul>
+              <li>Discord user IDs and usernames or display names.</li>
+              <li>Discord server IDs and server-related information needed for a feature.</li>
+              <li>Command names, command options, and information included in a command or interaction.</li>
+            </ul><p>The Bot is not intended to collect sensitive personal information. Do not submit passwords, payment details, or other sensitive information through Bot commands.</p></section>
+            <section class="card" id="privacy-2"><h2><span class="num">02</span>How Information Is Used</h2><p>Information may be used to process commands, provide requested features, apply server-specific settings, troubleshoot errors, and maintain the Bot.</p><p>The Bot should only use information for purposes related to its features and operation.</p></section>
+            <section class="card" id="privacy-3"><h2><span class="num">03</span>Storage and Retention</h2><p>Whether information is stored, and for how long, depends on the Bot’s actual implementation and configuration. Some information may only be processed temporarily; settings or other data may be retained if a feature requires it.</p><p class="note"><strong>Developer note:</strong> Before publishing, specify exactly what your bot saves (if anything), where it is stored, and when it is deleted. Remove or revise this paragraph so it accurately describes your code and hosting setup.</p></section>
+            <section class="card" id="privacy-4"><h2><span class="num">04</span>Sharing of Information</h2><p>The developer does not intend to sell personal information or share it with unrelated third parties. Information may be handled by Discord and by the hosting or infrastructure services used to operate the Bot, subject to their own terms and privacy practices.</p></section>
+            <section class="card" id="privacy-5"><h2><span class="num">05</span>Security</h2><p>Reasonable steps may be taken to protect information handled by the Bot. However, no online service or storage system can be guaranteed to be completely secure.</p></section>
+            <section class="card" id="privacy-6"><h2><span class="num">06</span>Your Choices and Data Requests</h2><p>If you have a question about information associated with your use of the Bot, or want to request access to or deletion of information it stores, contact the developer through Discord. The developer will review the request and respond where reasonably possible and as required by applicable law.</p></section>
+            <section class="card" id="privacy-7"><h2><span class="num">07</span>Changes to This Policy</h2><p>This Privacy Policy may be updated if the Bot’s features, data practices, or hosting arrangements change. The latest version will be published on this page.</p></section>
+            <section class="card" id="privacy-8"><h2><span class="num">08</span>Contact</h2><div class="contact"><p>For privacy questions or data requests, contact the developer through Discord.</p><p class="note">Developer contact: @utrick_fr on Discord.</p></div></section>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>© 2026 UTrick’s Awesome Bot · Private project for friends</span>
+      <span>Not affiliated with or endorsed by Discord.</span>
+    </div>
+  </footer>
+  <script>
+    const tabs = [...document.querySelectorAll('.tab')];
+    const docs = [...document.querySelectorAll('.document')];
+    function showDocument(id) {
+      tabs.forEach(tab => {
+        const selected = tab.id === `tab-${id}`;
+        tab.setAttribute('aria-selected', String(selected));
+      });
+      docs.forEach(doc => doc.classList.toggle('active', doc.id === id));
+      if (location.hash !== '#documents') history.replaceState(null, '', '#documents');
+    }
+    tabs.forEach(tab => tab.addEventListener('click', () => showDocument(tab.id.replace('tab-', ''))));
+    document.querySelectorAll('[data-switch]').forEach(link =>
+      link.addEventListener('click', () => showDocument(link.dataset.switch))
+    );
+  </script>
+</body>
+</html>
